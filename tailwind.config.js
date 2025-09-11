@@ -7,8 +7,24 @@ module.exports = {
     "./node_modules/@heroui/theme/dist/components/navbar.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+      },
+    },
   },
   darkMode: "class",
-  plugins: [heroui()],
+  plugins: [heroui(), 
+     plugin(function({ addVariant }) {
+      // Tailwind v3.2 dark behavior.
+      addVariant('daak', '.dark &');
+      // OR
+      // Using `:match()`.
+      addVariant('daak', [':match(.dark &)', ':is(.dark &)']);
+      // OR
+      // Using `:-webkit-any()`.
+      addVariant('daak', [':-webkit-any(.dark &)', ':is(.dark &)']);
+    })
+  ],
 };

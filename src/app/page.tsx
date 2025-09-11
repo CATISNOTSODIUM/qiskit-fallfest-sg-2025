@@ -1,6 +1,9 @@
 import About from "@/components/common/content/about";
+import Contact from "@/components/common/content/contact";
 import Partner from "@/components/common/content/partner";
 import Schedule from "@/components/common/content/schedule";
+import TitleCard from "@/components/common/content/titlecard";
+import Venue from "@/components/common/content/venue";
 import Footer from "@/components/common/footer";
 import NavigationBar from "@/components/common/navbar";
 
@@ -16,11 +19,12 @@ export default function Home() {
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pb-20 gap-16">
       <NavigationBar/>
       <main className="dark flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-          <div>{'LOGO'}</div>
+          <TitleCard/>
           <About/>
           <Partner/>
           <Schedule/>
-          <div>{'Speakers'}</div>
+          <Venue/>
+          <Contact/>
       </main>
       <Footer/>
     </div>
