@@ -1,6 +1,14 @@
 "use client";
 import { EVENT_TITLE, NAVIGATION_HEADERS } from "@/lib/constants";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@heroui/navbar";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenu,
+  NavbarMenuItem,
+  NavbarMenuToggle,
+} from "@heroui/navbar";
 import {
   Button,
   Dropdown,
@@ -11,9 +19,10 @@ import {
 import Link from "next/link";
 import { chevronDown } from "./icons";
 import React from "react";
+import { redirect } from "next/navigation";
 
 function QiskitLogo() {
-  return <div className="text-4xl mr-5">{"⚛"}</div>;
+  return <div className="text-4xl mr-5">{""}</div>;
 }
 
 export default function NavigationBar() {
@@ -21,7 +30,9 @@ export default function NavigationBar() {
   return (
     <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent className="sm:hidden" justify="start">
-        <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        />
       </NavbarContent>
       <NavbarBrand>
         <QiskitLogo />
@@ -29,12 +40,21 @@ export default function NavigationBar() {
       </NavbarBrand>
       {/* Small screen only */}
       <NavbarMenu className={isMenuOpen ? "flex" : "hidden"}>
-        {NAVIGATION_HEADERS.flatMap(header => header.subheader ? header.subheader : [header])
-          .map((header, idx) => <NavbarMenuItem key={idx}>
-                <Link href={header.link ?? "#" + header.title}>
-                  {header.title}
-                </Link>
-              </NavbarMenuItem>)}
+        {NAVIGATION_HEADERS.flatMap((header) =>
+          header.subheader ? header.subheader : [header]
+        ).map((header, idx) => (
+          <NavbarMenuItem key={idx}>
+            <Button
+              className="bg-inherit text-inherit text-base"
+              onPress={() => {
+                setIsMenuOpen(false);
+                redirect(header.link ?? "#" + header.title);
+              }}
+            >
+              {header.title}
+            </Button>
+          </NavbarMenuItem>
+        ))}
       </NavbarMenu>
       {/* Big screen only */}
       <NavbarContent className="sm:hidden sm:flex" justify="end">
@@ -58,28 +78,29 @@ export default function NavigationBar() {
                       endContent={chevronDown}
                       radius="sm"
                     >
-                      <Link href={header.link ?? "#" + header.title}>
-                        {header.title}
-                      </Link>
+                      {header.title}
                     </Button>
                   </DropdownTrigger>
                 </NavbarItem>
                 <DropdownMenu
-                    aria-label={header.title}
-                    itemClasses={{
-                      base: "gap-4 bg-inherit text-inherit font-sans text-sm",
-                    }}
-                  >
-                    {header.subheader.map((subheader, id) => (
-                      <DropdownItem
-                        key={subheader.title + id.toString()}
+                  aria-label={header.title}
+                  itemClasses={{
+                    base: "gap-4 bg-inherit text-inherit font-sans text-sm",
+                  }}
+                >
+                  {header.subheader.map((subheader, id) => (
+                    <DropdownItem key={subheader.title + id.toString()}>
+                      <Button
+                        className="bg-inherit text-inherit text-base"
+                        onPress={() =>
+                          redirect(subheader.link ?? "#" + subheader.title)
+                        }
                       >
-                        <Link href={subheader.link ?? "#" + subheader.title}>
-                          {subheader.title}
-                        </Link>
-                      </DropdownItem>
-                    ))}
-                  </DropdownMenu>
+                        {subheader.title}
+                      </Button>
+                    </DropdownItem>
+                  ))}
+                </DropdownMenu>
               </Dropdown>
             );
           }

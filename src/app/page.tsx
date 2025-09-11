@@ -1,5 +1,6 @@
 import About from "@/components/common/content/about";
 import Contact from "@/components/common/content/contact";
+import OurTeam from "@/components/common/content/ourteam";
 import Partner from "@/components/common/content/partner";
 import Schedule from "@/components/common/content/schedule";
 import TitleCard from "@/components/common/content/titlecard";
@@ -24,6 +25,7 @@ export default function Home() {
           <Partner/>
           <Schedule/>
           <Venue/>
+          <OurTeam/>
           <Contact/>
       </main>
       <Footer/>

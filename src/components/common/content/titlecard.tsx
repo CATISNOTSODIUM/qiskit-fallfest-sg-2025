@@ -14,13 +14,14 @@ export default function TitleCard() {
             <div className="text-2xl pt-5 font-normal text-inherit">In collaboration with IBM Quantum. </div>
             </h2>
         </div>
-        <div className="hidden md:flex w-full h-full items-center justify-center drop-shadow-2xl drop-shadow-purple-700/70">
+        <div className="hidden md:flex w-full h-full items-center 
+            justify-center drop-shadow-2xl drop-shadow-purple-700/70">
            <Image
                 src="/images/Qiskit-Logo.png"
                 alt="qiskit-logo"
                 width={300}
                 height={300}
-                className="dark:invert"
+                className="invert hover:scale-[1.1] duration-700"
             />
         </div>
     </div>
