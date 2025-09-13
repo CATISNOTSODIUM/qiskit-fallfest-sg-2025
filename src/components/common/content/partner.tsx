@@ -38,11 +38,7 @@ function PartnerCard() {
                 IBM Qiskit
               </h3>
               <p className="text-base text-foreground/80">
-                Qiskit is an open-source framework developed by IBM for quantum
-                computing. It allows users to create and run quantum programs on
-                both simulators and real quantum hardware. Qiskit includes tools
-                for building quantum circuits, simulating quantum systems, and
-                developing quantum algorithms.
+                Qiskit is a free and open-source toolkit created by IBM for quantum computing. It enables users to design and execute quantum programs on both simulated environments and actual quantum machines. The framework provides a suite of tools for constructing quantum circuits, modeling quantum behavior, and crafting quantum algorithms.
               </p>
             </div>
           </div>

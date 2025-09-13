@@ -91,7 +91,7 @@ export default function NavigationBar() {
                   {header.subheader.map((subheader, id) => (
                     <DropdownItem key={subheader.title + id.toString()}>
                       <Button
-                        className="bg-inherit text-inherit text-base"
+                        className="bg-inherit text-base w-full text-inherit"
                         onPress={() =>
                           redirect(subheader.link ?? "#" + subheader.title)
                         }

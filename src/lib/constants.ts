@@ -1,5 +1,8 @@
 export const EVENT_TITLE = "QISKIT FALLFEST 2025";
 
+// Event start date (hardcoded). To be formatted later.
+export const EVENT_START_DATE: Date = new Date("10 Dec 2025 00:12:00 GMT");
+
 interface NavigationHeader {
   title: string;
   link?: string; // default is `#title`
@@ -13,22 +16,22 @@ export const NAVIGATION_HEADERS: NavigationHeader[] = [
   {
     title: "Event",
     subheader: [
-      { title: "Partners" },
       { title: "Schedules" },
-      { title: "Speakers" },
-      { title: "Venue" },
+      { title: "Partners" },
     ],
   },
   {
     title: "Team",
   },
   {
-    title: "Contact",
+    title: "Register",
   },
 ];
 
-export const ABOUT_THE_EVENT_DESCRIPTION =
-  "Qiskit Fall Fest is the world’s largest collection of student-run quantum computing events. As one of the 50 sponsored international universities selected to host it, we bring together a collection of talented quantum enthusiasts along with IBM Quantum members to mark a celebration of the advances that quantum computing has made in the past year, with experienced quantum scientists and budding young quantum enthusiasts collaborating to showcase their talents at the workshops and hackathons at the VIT Chennai campus. With open arms, we welcome you to the event and are hoping to see you there!!";
+export const ABOUT_THE_EVENT_DESCRIPTION = 
+  `Qiskit Fall Fest is the world’s largest collection of student-run quantum computing events, 
+  open to all university, polytechnic, and junior college students, as well as researchers and 
+  quantum enthusiasts across Singapore. `;
 
 
 ////// Schedule /////

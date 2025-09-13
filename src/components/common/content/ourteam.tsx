@@ -6,7 +6,7 @@ export default function OurTeam() {
         <div className="text-4xl font-bold text-left mb-4">
         {"Our team"}
         </div>
-        <div className="grid grid-cols-3 gap-5 max-w-[900px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 max-w-[900px]">
             <TeamCard />
             <TeamCard />
             <TeamCard />
@@ -25,7 +25,7 @@ export function TeamCard() {
         <small className="text-default-500">Qiskit Committee</small>
         <h4 className="font-bold text-large">Your name</h4>
       </CardHeader>
-      <CardBody className="overflow-visible py-2">
+      <CardBody className="overflow-visible flex w-full items-center justify-center">
         <Image
           alt="Card background"
           className="object-cover rounded-xl"

@@ -1,7 +1,10 @@
 import Image from "next/image";
+import Countdown from "../countdown";
+import { EVENT_START_DATE } from "@/lib/constants";
+import { Button } from "@heroui/react";
 
 export default function TitleCard() {
-    return <div className="min-h-[300px] pb-12 flex flex-row items-center w-full
+    return <div className="min-h-[300px] flex flex-row items-center w-full
         bg-[radial-gradient(circle,#73737350_1px,transparent_1px)] 
         bg-[size:20px_20px]
     ">
@@ -10,12 +13,20 @@ export default function TitleCard() {
                 from-foreground to-purple-400 p-10">
             <div className="text-7xl">QISKIT</div>
             <div className="text-6xl">FALL FEST</div>
-            <div className="text-5xl font-bold">Singapore, 2025</div>
-            <div className="text-2xl pt-5 font-normal text-inherit">In collaboration with IBM Quantum. </div>
+            <div className="text-5xl font-bold">Singapore 2025</div>
+            <div className="text-2xl pt-5 font-normal text-inherit">Celebrating a Century of Quantum</div>
+            <div className="flex flex-row gap-3">
+<Button variant="solid" color="secondary" className="rounded-full mt-4" size="lg">
+                Register
+            </Button>
+            <Button variant="bordered" color="secondary" className="rounded-full mt-4" size="lg">
+                Contact us
+            </Button>
+            </div>
             </h2>
         </div>
         <div className="hidden md:flex w-full h-full items-center 
-            justify-center drop-shadow-2xl drop-shadow-purple-700/70">
+            justify-center drop-shadow-2xl">
            <Image
                 src="/images/Qiskit-Logo.png"
                 alt="qiskit-logo"
