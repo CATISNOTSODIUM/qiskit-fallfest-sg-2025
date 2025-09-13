@@ -1,3 +1,4 @@
+import { TEAM_CARDS, TeamCardProps } from "@/lib/constants";
 import { Card, CardBody, CardHeader } from "@heroui/react";
 import Image from "next/image";
 
@@ -7,29 +8,28 @@ export default function OurTeam() {
         {"Our team"}
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 max-w-[900px]">
-            <TeamCard />
-            <TeamCard />
-            <TeamCard />
-            <TeamCard />
-            <TeamCard />
+            {
+              TEAM_CARDS.map(
+                (team, idx) => <TeamCard key={idx} {...team}/>
+              )
+            }
         </div>
     </div>
 }
 
-
-// TODO: Make this component generic
-export function TeamCard() {
+export function TeamCard(props: TeamCardProps) {
+  const {name, position, imagePath} = props;
   return (
     <Card className="py-4 row-span-1 hover:scale-[1.05]">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
-        <small className="text-default-500">Qiskit Committee</small>
-        <h4 className="font-bold text-large">Your name</h4>
+        <small className="text-default-500">{position}</small>
+        <h4 className="font-bold text-large">{name}</h4>
       </CardHeader>
       <CardBody className="overflow-visible flex w-full items-center justify-center">
         <Image
           alt="Card background"
           className="object-cover rounded-xl"
-          src="https://heroui.com/images/hero-card-complete.jpeg"
+          src={imagePath}
           width={270}
           height={270}
         />

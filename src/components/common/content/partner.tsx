@@ -1,3 +1,4 @@
+import { PartnerCardProps, PARTNERS } from "@/lib/constants";
 import { Card, CardBody } from "@heroui/react";
 import Image from "next/image";
 
@@ -5,13 +6,17 @@ export default function Partner() {
   return (
     <div className="w-full px-6" id="Partners">
       <div className="text-4xl font-bold text-left mb-4">{"Partners"}</div>
-      <PartnerCard />
+      {
+        PARTNERS.map(
+          (partner, idx) => <PartnerCard key={idx} {...partner}/>
+        )
+      }
     </div>
   );
 }
 
-// TODO: Make this function generic
-function PartnerCard() {
+function PartnerCard(props: PartnerCardProps) {
+  const {imagePath, name, description} = props;
   return (
     <Card
       isBlurred
@@ -26,7 +31,7 @@ function PartnerCard() {
               alt="Album cover"
               className="object-cover"
               height={200}
-              src="/images/Qiskit-brand.png"
+              src = {imagePath}
               width={200}
             />
           </div>
@@ -35,10 +40,10 @@ function PartnerCard() {
           <div className="flex flex-col md:w-2/3">
             <div className="flex flex-col gap-2">
               <h3 className="font-semibold text-2xl text-foreground/90">
-                IBM Qiskit
+                {name}
               </h3>
               <p className="text-base text-foreground/80">
-                Qiskit is a free and open-source toolkit created by IBM for quantum computing. It enables users to design and execute quantum programs on both simulated environments and actual quantum machines. The framework provides a suite of tools for constructing quantum circuits, modeling quantum behavior, and crafting quantum algorithms.
+                {description}
               </p>
             </div>
           </div>

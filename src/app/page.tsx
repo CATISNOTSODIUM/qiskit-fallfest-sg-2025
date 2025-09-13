@@ -1,10 +1,8 @@
 import About from "@/components/common/content/about";
-import Contact from "@/components/common/content/contact";
 import OurTeam from "@/components/common/content/ourteam";
 import Partner from "@/components/common/content/partner";
 import Schedule from "@/components/common/content/schedule";
 import TitleCard from "@/components/common/content/titlecard";
-import Venue from "@/components/common/content/venue";
 import Countdown from "@/components/common/countdown";
 import Footer from "@/components/common/footer";
 import NavigationBar from "@/components/common/navbar";
@@ -23,17 +21,13 @@ export default function Home() {
       <NavigationBar/>
       <main className="dark flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
           <TitleCard/>
-          
           <About/>
           <Countdown 
             startDate={EVENT_START_DATE}
-            description="UNTIL FALL FEST!"
           />
           <Schedule/>
-          <Venue/>
           <Partner/>
           <OurTeam/>
-          <Contact/>
       </main>
       <Footer/>
     </div>

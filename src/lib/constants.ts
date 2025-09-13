@@ -18,6 +18,7 @@ export const NAVIGATION_HEADERS: NavigationHeader[] = [
     subheader: [
       { title: "Schedules" },
       { title: "Partners" },
+      { title: "FAQs", link: "/faq"}
     ],
   },
   {
@@ -107,3 +108,36 @@ export const QISKIT_SCHEDULE: ScheduleDate[] = [
     ]
   }
 ];
+
+
+///// Partners /////
+
+export interface PartnerCardProps {
+  imagePath: string
+  name: string
+  description: string
+}
+
+
+export const PARTNERS: PartnerCardProps[] = [
+  {
+    imagePath: "/images/Qiskit-brand.png",
+    name: "IBM Qiskit",
+    description: "Qiskit is a free and open-source toolkit created by IBM for quantum computing. It enables users to design and execute quantum programs on both simulated environments and actual quantum machines. The framework provides a suite of tools for constructing quantum circuits, modeling quantum behavior, and crafting quantum algorithms."
+  }
+];
+
+//// OUR TEAMS ////
+export interface TeamCardProps {
+  name: string
+  position: string
+  imagePath: string
+}
+
+export const TEAM_CARDS: TeamCardProps[] = [
+  {
+    name: "YOUR NAME",
+    position: "Qiskit committee",
+    imagePath: "https://heroui.com/images/hero-card-complete.jpeg"
+  }
+]

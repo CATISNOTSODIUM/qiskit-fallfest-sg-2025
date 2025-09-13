@@ -34,7 +34,9 @@ export default function NavigationBar() {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </NavbarContent>
-      <NavbarBrand>
+      <NavbarBrand
+        onClick={() => redirect("/")} 
+        className="cursor-pointer">
         <QiskitLogo />
         <p className="font-bold text-inherit">{EVENT_TITLE}</p>
       </NavbarBrand>
@@ -48,7 +50,7 @@ export default function NavigationBar() {
               className="bg-inherit text-inherit text-base"
               onPress={() => {
                 setIsMenuOpen(false);
-                redirect(header.link ?? "#" + header.title);
+                redirect(header.link ?? "/#" + header.title);
               }}
             >
               {header.title}
@@ -62,7 +64,7 @@ export default function NavigationBar() {
           if (!header.subheader || header.subheader.length === 0) {
             return (
               <NavbarItem key={idx} className="hidden lg:flex mx-3">
-                <Link href={header.link ?? "#" + header.title}>
+                <Link href={header.link ?? "/#" + header.title}>
                   {header.title}
                 </Link>
               </NavbarItem>
@@ -93,7 +95,7 @@ export default function NavigationBar() {
                       <Button
                         className="bg-inherit text-base w-full text-inherit"
                         onPress={() =>
-                          redirect(subheader.link ?? "#" + subheader.title)
+                          redirect(subheader.link ?? "/#" + subheader.title)
                         }
                       >
                         {subheader.title}

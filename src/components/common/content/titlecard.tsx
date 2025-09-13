@@ -1,7 +1,6 @@
 import Image from "next/image";
-import Countdown from "../countdown";
-import { EVENT_START_DATE } from "@/lib/constants";
 import { Button } from "@heroui/react";
+import Link from "next/link";
 
 export default function TitleCard() {
     return <div className="min-h-[300px] flex flex-row items-center w-full
@@ -19,9 +18,16 @@ export default function TitleCard() {
 <Button variant="solid" color="secondary" className="rounded-full mt-4" size="lg">
                 Register
             </Button>
-            <Button variant="bordered" color="secondary" className="rounded-full mt-4" size="lg">
-                Contact us
+            <Link href={"/faq"}>
+            <Button 
+                variant="bordered"
+                color="secondary"
+                className="rounded-full mt-4"
+                size="lg"
+            >
+                FAQs
             </Button>
+            </Link>
             </div>
             </h2>
         </div>
