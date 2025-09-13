@@ -1,6 +1,7 @@
 "use client";
 import Footer from "@/components/common/footer";
 import NavigationBar from "@/components/common/navbar";
+import CommonTitleCard from "@/components/titlecard";
 import { Accordion, AccordionItem } from "@heroui/react";
 import Image from "next/image";
 
@@ -47,7 +48,7 @@ export default function Faq() {
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pb-20 gap-16">
       <NavigationBar />
       <main className="max-w-[900px] dark flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <FaqTitleCard />
+        <CommonTitleCard title="Frequently Asked Questions" />
           {FAQ_LIST.map((faq, index) => (
             <FaqCard key={index} {...faq} />
           ))}
@@ -67,36 +68,4 @@ function FaqCard(props: FaqCardProps) {
   return <Accordion variant="splitted">
       <AccordionItem title={props.question}>{props.answer}</AccordionItem>
     </Accordion>;
-}
-
-function FaqTitleCard() {
-  return (
-    <div
-      className="min-h-[300px] flex flex-row items-center w-full
-        bg-[radial-gradient(circle,#73737350_1px,transparent_1px)] 
-        bg-[size:20px_20px]
-    "
-    >
-      <div className="flex flex-col sm:min-w-[500px]">
-        <h2
-          className="w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r 
-                from-foreground to-purple-400 p-10"
-        >
-          <div className="text-5xl font-bold">Frequently Asked Questions</div>
-        </h2>
-      </div>
-      <div
-        className="hidden md:flex w-full h-full items-center 
-            justify-center drop-shadow-2xl"
-      >
-        <Image
-          src="/images/Qiskit-Logo.png"
-          alt="qiskit-logo"
-          width={300}
-          height={300}
-          className="invert hover:scale-[1.1] duration-700"
-        />
-      </div>
-    </div>
-  );
 }

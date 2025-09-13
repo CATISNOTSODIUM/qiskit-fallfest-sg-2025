@@ -23,6 +23,7 @@ export const NAVIGATION_HEADERS: NavigationHeader[] = [
   },
   {
     title: "Team",
+    link: "/team"
   },
   {
     title: "Register",

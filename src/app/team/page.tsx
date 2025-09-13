@@ -1,12 +1,16 @@
+import Footer from "@/components/common/footer";
+import NavigationBar from "@/components/common/navbar";
+import CommonTitleCard from "@/components/titlecard";
 import { TEAM_CARDS, TeamCardProps } from "@/lib/constants";
 import { Card, CardBody, CardHeader } from "@heroui/react";
 import Image from "next/image";
 
 export default function OurTeam() {
-    return <div className="w-full px-6" id="Team">
-        <div className="text-4xl font-bold text-left mb-4">
-        {"Our team"}
-        </div>
+  return <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pb-20 gap-16">
+        <NavigationBar />
+        <main className="max-w-[900px] dark flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        <div className="w-full px-6" id="Team">
+        <CommonTitleCard title="Our team" />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 max-w-[900px]">
             {
               TEAM_CARDS.map(
@@ -15,6 +19,9 @@ export default function OurTeam() {
             }
         </div>
     </div>
+        </main>
+        <Footer />
+      </div>
 }
 
 export function TeamCard(props: TeamCardProps) {

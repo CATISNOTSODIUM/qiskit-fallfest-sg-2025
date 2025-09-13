@@ -1,5 +1,5 @@
 import About from "@/components/common/content/about";
-import OurTeam from "@/components/common/content/ourteam";
+import Announcement from "@/components/common/content/announcement";
 import Partner from "@/components/common/content/partner";
 import Schedule from "@/components/common/content/schedule";
 import TitleCard from "@/components/common/content/titlecard";
@@ -21,13 +21,13 @@ export default function Home() {
       <NavigationBar/>
       <main className="dark flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
           <TitleCard/>
+          <Announcement/>
           <About/>
           <Countdown 
             startDate={EVENT_START_DATE}
           />
           <Schedule/>
           <Partner/>
-          <OurTeam/>
       </main>
       <Footer/>
     </div>
