@@ -27,6 +27,7 @@ export const NAVIGATION_HEADERS: NavigationHeader[] = [
   },
   {
     title: "Register",
+    link: "/register"
   },
 ];
 
