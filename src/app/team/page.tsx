@@ -24,7 +24,7 @@ export default function OurTeam() {
       </div>
 }
 
-export function TeamCard(props: TeamCardProps) {
+function TeamCard(props: TeamCardProps) {
   const {name, position, imagePath} = props;
   return (
     <Card className="py-4 row-span-1 hover:scale-[1.05]">

@@ -15,8 +15,8 @@ export default function TitleCard() {
             <div className="text-5xl font-bold">Singapore 2025</div>
             <div className="text-2xl pt-5 font-normal text-inherit">Celebrating a Century of Quantum</div>
             <div className="flex flex-row gap-3">
-<Button variant="solid" color="secondary" className="rounded-full mt-4" size="lg">
-                Register
+<Button variant="solid" className="rounded-full mt-4 bg-gray-300 text-gray-700" size="lg" disabled>
+                Register Not Open Yet
             </Button>
             <Link href={"/faq"}>
             <Button 

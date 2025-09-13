@@ -1,7 +1,7 @@
 export const EVENT_TITLE = "QISKIT FALLFEST 2025";
 
 // Event start date (hardcoded). To be formatted later.
-export const EVENT_START_DATE: Date = new Date("10 Dec 2025 00:12:00 GMT");
+export const EVENT_START_DATE: Date = new Date("7 Dec 2025 00:12:00 GMT");
 
 interface NavigationHeader {
   title: string;
@@ -20,7 +20,8 @@ export const NAVIGATION_HEADERS: NavigationHeader[] = [
       { title: "Partners" },
       { title: "FAQs", link: "/faq"}
     ],
-  },
+  }
+  /*
   {
     title: "Team",
     link: "/team"
@@ -28,6 +29,7 @@ export const NAVIGATION_HEADERS: NavigationHeader[] = [
   {
     title: "Register",
   },
+  */
 ];
 
 export const ABOUT_THE_EVENT_DESCRIPTION = 
@@ -48,6 +50,8 @@ interface ScheduleHour {
 }
 
 // Sample schedule
+export const QISKIT_SCHEDULE: ScheduleDate[] = [];
+/*
 export const QISKIT_SCHEDULE: ScheduleDate[] = [
   {
     date: "2025-09-12",
@@ -109,6 +113,7 @@ export const QISKIT_SCHEDULE: ScheduleDate[] = [
     ]
   }
 ];
+*/
 
 
 ///// Partners /////
@@ -142,3 +147,80 @@ export const TEAM_CARDS: TeamCardProps[] = [
     imagePath: "https://heroui.com/images/hero-card-complete.jpeg"
   }
 ]
+
+//// Announcement /////
+
+export interface AnnouncementCardProps {
+    title: string
+    description: string
+    date: Date
+}
+
+export const ANNOUNCEMENT_LIST: AnnouncementCardProps[] = [];
+
+/*
+export const ANNOUNCEMENT_LIST: AnnouncementCardProps[] = [
+  {
+    title: "📢 Qiskit Fall Fest Singapore",
+    description:
+      "Qiskit Fall Fest is the world’s largest collection of student-run quantum computing events, open to all university, polytechnic, and junior college students, as well as researchers and quantum enthusiasts across Singapore.",
+    date: new Date("2025-09-20"),
+  },
+  {
+    title: "🧠 Quantum Hackathon 2025: Innovate with Qubits",
+    description:
+      "Join the brightest minds in Singapore for a 48-hour quantum coding sprint. Whether you're a beginner or a seasoned researcher, this hackathon offers workshops, mentorship, and prizes for the most groundbreaking quantum solutions.",
+    date: new Date("2025-10-05"),
+  },
+  {
+    title: "🎓 Quantum Career Connect: Meet the Industry",
+    description:
+      "A networking event designed to bridge students and professionals with leading quantum tech companies. Expect panel discussions, resume reviews, and direct recruitment opportunities from startups and global firms alike.",
+    date: new Date("2025-10-18"),
+  },
+];
+*/
+///// FAQ LIST /////
+
+
+export interface FaqCardProps {
+  question: string;
+  answer: string;
+}
+
+export const FAQ_LIST: FaqCardProps[] = [];
+/*
+export const FAQ_LIST = [
+  {
+    question:
+      "Do I need prior experience in quantum computing to participate in Qiskit Fall Fest?",
+    answer:
+      "Not at all! Qiskit Fall Fest is designed to be beginner-friendly. Whether you're just curious or already diving deep into quantum algorithms, there are sessions and resources tailored for every level.",
+  },
+  {
+    question: "How do I register for Qiskit Fall Fest 2025?",
+    answer:
+      "You can register through our official website. Just fill out the registration form and you'll receive a confirmation email with further details.",
+  },
+  {
+    question: "Can I participate if I'm not a student?",
+    answer:
+      "While Qiskit Fall Fest is primarily student-focused, many sessions are open to researchers, educators, and quantum enthusiasts. Check the event schedule for open-access activities.",
+  },
+  {
+    question: "Will there be any hands-on workshops or coding sessions?",
+    answer:
+      "Yes! The event includes hands-on workshops where you'll get to build quantum circuits using Qiskit and run them on simulators or real quantum hardware.",
+  },
+  {
+    question: "Are there any prizes or certificates for participants?",
+    answer:
+      "Absolutely. Participants may receive digital certificates, and selected competitions or hackathons will offer prizes sponsored by our partners.",
+  },
+  {
+    question: "Can I form a team with friends from other schools?",
+    answer:
+      "Yes, cross-institutional teams are welcome! Collaboration is encouraged, and many challenges are designed to be tackled in groups.",
+  },
+];
+*/

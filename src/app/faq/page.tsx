@@ -2,42 +2,8 @@
 import Footer from "@/components/common/footer";
 import NavigationBar from "@/components/common/navbar";
 import CommonTitleCard from "@/components/titlecard";
+import { FAQ_LIST, FaqCardProps } from "@/lib/constants";
 import { Accordion, AccordionItem } from "@heroui/react";
-import Image from "next/image";
-
-const FAQ_LIST = [
-  {
-    question:
-      "Do I need prior experience in quantum computing to participate in Qiskit Fall Fest?",
-    answer:
-      "Not at all! Qiskit Fall Fest is designed to be beginner-friendly. Whether you're just curious or already diving deep into quantum algorithms, there are sessions and resources tailored for every level.",
-  },
-  {
-    question: "How do I register for Qiskit Fall Fest 2025?",
-    answer:
-      "You can register through our official website. Just fill out the registration form and you'll receive a confirmation email with further details.",
-  },
-  {
-    question: "Can I participate if I'm not a student?",
-    answer:
-      "While Qiskit Fall Fest is primarily student-focused, many sessions are open to researchers, educators, and quantum enthusiasts. Check the event schedule for open-access activities.",
-  },
-  {
-    question: "Will there be any hands-on workshops or coding sessions?",
-    answer:
-      "Yes! The event includes hands-on workshops where you'll get to build quantum circuits using Qiskit and run them on simulators or real quantum hardware.",
-  },
-  {
-    question: "Are there any prizes or certificates for participants?",
-    answer:
-      "Absolutely. Participants may receive digital certificates, and selected competitions or hackathons will offer prizes sponsored by our partners.",
-  },
-  {
-    question: "Can I form a team with friends from other schools?",
-    answer:
-      "Yes, cross-institutional teams are welcome! Collaboration is encouraged, and many challenges are designed to be tackled in groups.",
-  },
-];
 
 
 /**
@@ -59,10 +25,6 @@ export default function Faq() {
 }
 
 
-interface FaqCardProps {
-  question: string;
-  answer: string;
-}
 
 function FaqCard(props: FaqCardProps) {
   return <Accordion variant="splitted">

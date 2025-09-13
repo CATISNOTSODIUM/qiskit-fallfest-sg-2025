@@ -10,6 +10,9 @@ import {
 } from "@heroui/react";
 
 export default function Schedule() {
+  if (QISKIT_SCHEDULE.length === 0) {
+    return <></>
+  }
   return (
     <div className="w-full px-6" id="Schedules">
       <div className="text-4xl font-bold text-left mb-4">{"Schedule"}</div>
