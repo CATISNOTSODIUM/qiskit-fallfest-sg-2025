@@ -40,18 +40,47 @@ export const ABOUT_THE_EVENT_DESCRIPTION =
 
 
 ////// Schedule /////
-interface ScheduleDate {
-  date: string
-  scheduleHour: ScheduleHour[]
-}
 
-interface ScheduleHour {
+interface ScheduleDetails {
   time: string
   details: string
 }
 
 // Sample schedule
-export const QISKIT_SCHEDULE: ScheduleDate[] = [];
+export const QISKIT_SCHEDULE: ScheduleDetails[] = [
+  {
+    "time": "6th Dec 2025",
+    "details": "Opening ceremony • Guest speaker • Networking lunch • Intro to Quantum Computing seminar"
+  },
+  {
+    "time": "8th Dec 2025",
+    "details": "Beginner Workshop #1 — \"Zero-to-Circuit: Your First Quantum Program in Qiskit\""
+  },
+  {
+    "time": "9th Dec 2025",
+    "details": "Guest speaker from IBM"
+  },
+  {
+    "time": "10th Dec 2025",
+    "details": "Beginner Workshop #2 — \"From Simulator to Real Hardware: Noise, Transpilation & Good Experiments\" • Intermediate Workshop #1 — \"Intro to Quantum Machine Learning\""
+  },
+  {
+    "time": "12th Dec 2025",
+    "details": "Beginner Workshop #3 — \"Algorithms Starter Pack: Deutsch–Jozsa & Grover\" • Intermediate Workshop #2 — \"Variational Circuit Design\""
+  },
+  {
+    "time": "13th Dec 2025",
+    "details": "Guest speaker from industry/academia"
+  },
+  {
+    "time": "15th Dec 2025",
+    "details": "Lab visit — Centre for Quantum Technologies @ NUS • Career talk: pathways in quantum"
+  },
+  {
+    "time": "17th Dec 2025",
+    "details": "Hackathon (Beginner & Intermediate tracks) • Awards ceremony • Closing ceremony"
+  }
+]
 /*
 export const QISKIT_SCHEDULE: ScheduleDate[] = [
   {

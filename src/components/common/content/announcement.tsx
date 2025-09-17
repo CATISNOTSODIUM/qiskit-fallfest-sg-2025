@@ -1,6 +1,6 @@
 "use client"
 import { ANNOUNCEMENT_LIST, AnnouncementCardProps } from "@/lib/constants";
-import { Button, Card, CardBody, CardHeader } from "@heroui/react";
+import { Button, Card, CardBody } from "@heroui/react";
 import { useState } from "react";
 
 export default function Announcement() {
