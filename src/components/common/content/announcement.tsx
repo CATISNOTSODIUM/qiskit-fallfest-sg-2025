@@ -16,7 +16,7 @@ export default function Announcement() {
             </div>
             {
               ANNOUNCEMENT_LIST.length === 0
-              ? <div>{'No latest annoucements'}</div>
+              ? <div className="text-xl text-gray-500">{'No latest annoucements'}</div>
               : <div className="flex flex-col justify-center items-center gap-3 bg-[linear-gradient(to_right,#73737320_1px,transparent_1px),linear-gradient(to_bottom,#73737320_1px,transparent_1px)] bg-[size:20px_20px]">
                 <AnnouncementCard {... targetedList[0]}/>
                 {isExpanded && targetedList.length > 1 && 

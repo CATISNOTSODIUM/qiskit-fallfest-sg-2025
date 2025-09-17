@@ -6,7 +6,7 @@ export default function About() {
       <div className="text-4xl font-bold text-left mb-4">
         {"About the event"}
       </div>
-      <p className="text-xl text-left leading-relaxed max-w-4xl">
+      <p className="text-xl text-left leading-relaxed">
         {ABOUT_THE_EVENT_DESCRIPTION}
       </p>
     </div>

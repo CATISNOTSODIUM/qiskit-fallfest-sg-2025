@@ -34,9 +34,10 @@ export const NAVIGATION_HEADERS: NavigationHeader[] = [
 ];
 
 export const ABOUT_THE_EVENT_DESCRIPTION = 
-  `Qiskit Fall Fest is the world’s largest collection of student-run quantum computing events, 
-  open to all university, polytechnic, and junior college students, as well as researchers and 
-  quantum enthusiasts across Singapore. `;
+  `Qiskit Fall Fest is the world’s largest collection of student-run quantum computing events, bringing together learners and innovators from across the world. This year, we're proud to host Singapore’s first-ever Fall Fest, open to university, polytechnic, and junior college students as well as researchers and quantum enthusiasts.
+
+
+`;
 
 
 ////// Schedule /////
@@ -162,12 +163,12 @@ export const PARTNERS: PartnerCardProps[] = [
     description: "Qiskit is IBM’s open-source quantum computing toolkit for building, simulating, and running quantum circuits and algorithms on real and virtual machines."
   },
   {
-    imagePath: "/images/nus-physoc.png",
-    name: "IQCC Quantum Computing Club",
+    imagePath: "/images/iqcc.jpg",
+    name: "QCC Quantum Computing Club",
     description: "Nanyang Technological University, Singapore"
   },
   {
-    imagePath: "/images/iqcc.jpg",
+    imagePath: "/images/nus-physoc.png",
     name: "NUS Physics Society",
     description: "National University of Singapore, Singapore"
   }
