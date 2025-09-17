@@ -164,7 +164,7 @@ export const PARTNERS: PartnerCardProps[] = [
   },
   {
     imagePath: "/images/iqcc.jpg",
-    name: "QCC Quantum Computing Club",
+    name: "NTU Quantum Computing Club",
     description: "Nanyang Technological University, Singapore"
   },
   {
