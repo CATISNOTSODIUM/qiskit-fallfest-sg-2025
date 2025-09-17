@@ -6,7 +6,7 @@ import TitleCard from "@/components/common/content/titlecard";
 import Countdown from "@/components/common/countdown";
 import Footer from "@/components/common/footer";
 import NavigationBar from "@/components/common/navbar";
-import { EVENT_START_DATE } from "@/lib/constants";
+import { EVENT_RANGE_DATE, EVENT_START_DATE } from "@/lib/constants";
 
 /**
  * Main component for the website.
@@ -19,12 +19,13 @@ export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pb-20 gap-16">
       <NavigationBar/>
-      <main className="dark flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+      <main className="lg:min-w-screen lg:px-24 dark flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
           <TitleCard/>
           <Announcement/>
           <About/>
           <Countdown 
             startDate={EVENT_START_DATE}
+            description={EVENT_RANGE_DATE}
           />
           <Schedule/>
           <Partner/>

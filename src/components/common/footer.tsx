@@ -8,18 +8,7 @@ export default function Footer() {
       <div className="hidden sm:block border-l h-6 mx-auto"></div>
 
       <div className="text-sm sm:text-base space-y-1">
-        <div>123 Quantum Lane, Singapore 567890</div>
-        <div>+65 1234 5678</div>
-        <div>
-          {" "}
-          <a
-            href="https://facebook.com/qiskitfallfest"
-            target="_blank"
-            className="text-blue-600 hover:underline"
-          >
-            Facebook
-          </a>
-        </div>
+        {/* Contact details here */}
       </div>
     </footer>
   );

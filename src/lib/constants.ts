@@ -1,7 +1,8 @@
 export const EVENT_TITLE = "QISKIT FALLFEST 2025";
 
 // Event start date (hardcoded). To be formatted later.
-export const EVENT_START_DATE: Date = new Date("7 Dec 2025 00:12:00 GMT");
+export const EVENT_START_DATE: Date = new Date("2025-12-06T09:00:00+08:00");
+export const EVENT_RANGE_DATE = "6th Dec - 17th Dec";
 
 interface NavigationHeader {
   title: string;
@@ -18,7 +19,7 @@ export const NAVIGATION_HEADERS: NavigationHeader[] = [
     subheader: [
       { title: "Schedules" },
       { title: "Partners" },
-      { title: "FAQs", link: "/faq"}
+      // { title: "FAQs", link: "/faq"}
     ],
   }
   /*
@@ -121,7 +122,7 @@ export const QISKIT_SCHEDULE: ScheduleDate[] = [
 export interface PartnerCardProps {
   imagePath: string
   name: string
-  description: string
+  description?: string
 }
 
 
@@ -129,7 +130,17 @@ export const PARTNERS: PartnerCardProps[] = [
   {
     imagePath: "/images/Qiskit-brand.png",
     name: "IBM Qiskit",
-    description: "Qiskit is a free and open-source toolkit created by IBM for quantum computing. It enables users to design and execute quantum programs on both simulated environments and actual quantum machines. The framework provides a suite of tools for constructing quantum circuits, modeling quantum behavior, and crafting quantum algorithms."
+    description: "Qiskit is IBM’s open-source quantum computing toolkit for building, simulating, and running quantum circuits and algorithms on real and virtual machines."
+  },
+  {
+    imagePath: "/images/nus-physoc.png",
+    name: "IQCC Quantum Computing Club",
+    description: "Nanyang Technological University, Singapore"
+  },
+  {
+    imagePath: "/images/iqcc.jpg",
+    name: "NUS Physics Society",
+    description: "National University of Singapore, Singapore"
   }
 ];
 

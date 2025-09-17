@@ -1,6 +1,5 @@
 import { PartnerCardProps, PARTNERS } from "@/lib/constants";
-import { Card, CardBody } from "@heroui/react";
-import Image from "next/image";
+import { Card, CardBody, Image } from "@heroui/react";
 
 export default function Partner() {
   return (
@@ -29,20 +28,18 @@ function PartnerCard(props: PartnerCardProps) {
           <div className="flex justify-center items-center md:w-1/3 bg-white shadow-lg p-4 rounded-lg">
             <Image
               alt="Album cover"
-              className="object-cover"
-              height={200}
               src = {imagePath}
-              width={200}
+              className="w-[200px] h-[120px] object-cover"
             />
           </div>
 
           {/* Text Section */}
           <div className="flex flex-col md:w-2/3">
             <div className="flex flex-col gap-2">
-              <h3 className="font-semibold text-2xl text-foreground/90">
+              <h3 className="font-semibold text-3xl text-foreground/90">
                 {name}
               </h3>
-              <p className="text-base text-foreground/80">
+              <p className="text-base text-default-500 text-foreground/80">
                 {description}
               </p>
             </div>
