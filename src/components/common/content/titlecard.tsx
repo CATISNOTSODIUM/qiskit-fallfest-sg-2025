@@ -26,7 +26,7 @@ export default function TitleCard() {
               size="lg"
               disabled
             >
-              Register Not Open Yet
+              Registeration Not Open Yet
             </Button>
             {/**
 <Link href={"/faq"}>

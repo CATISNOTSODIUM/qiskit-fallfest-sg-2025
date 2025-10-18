@@ -42,110 +42,79 @@ export const ABOUT_THE_EVENT_DESCRIPTION =
 
 ////// Schedule /////
 
-interface ScheduleDetails {
+export type ScheduleDetails = ScheduleDetailsDate[];
+
+interface ScheduleDetailsDate {
+  date: string
+  location?: string
+  details?: string
+  daySchedule: ScheduleDetailsTime[]
+}
+
+interface ScheduleDetailsTime {
   time: string
   details: string
 }
 
 // Sample schedule
-export const QISKIT_SCHEDULE: ScheduleDetails[] = [
+export const QISKIT_SCHEDULE: ScheduleDetailsDate[] = [
   {
-    "time": "6th Dec 2025",
-    "details": "Opening ceremony • Guest speaker • Networking lunch • Intro to Quantum Computing seminar"
+    "date": "8th December (Monday)",
+    "location": "Nanyang Technological University",
+    "details": "History",
+    "daySchedule": [
+      { "time": "9:30-10:30", "details": "Registration" },
+      { "time": "10:30-12:30", "details": "History of Quantum and Computer Science" },
+      { "time": "12:30-14:00", "details": "Lunch" },
+      { "time": "14:00-16:00", "details": "Basics Linear Algebra, Probability, and Statistics" }
+    ]
   },
   {
-    "time": "8th Dec 2025",
-    "details": "Beginner Workshop #1 — \"Zero-to-Circuit: Your First Quantum Program in Qiskit\""
+    "date": "9th December (Tuesday)",
+    "location": "National University of Singapore",
+    "details": "Universal Computation",
+    "daySchedule": [
+      { "time": "10:00-12:30", "details": "Universal Computation and Logic Gates" },
+      { "time": "12:30-13:30", "details": "Lunch" },
+      { "time": "13:30-14:30", "details": "Guest Speaker" },
+      { "time": "14:30-17:00", "details": "Introduction to Quantum Computation" }
+    ]
   },
   {
-    "time": "9th Dec 2025",
-    "details": "Guest speaker from IBM"
+    "date": "10th December (Wednesday)",
+    "location": "National University of Singapore",
+    "details": "How does Quantum work and is it real?",
+    "daySchedule": [
+      { "time": "10:00-12:00", "details": "Different Realizations of a Computer. Different Approach to Build a Quantum Computer" },
+      { "time": "12:00-13:00", "details": "Lunch" },
+      { "time": "13:00-16:00", "details": "Evening Station (Quantum Algorithm and Lab Visit)" },
+      { "time": "16:00-17:00", "details": "IBM speaker" }
+    ]
   },
   {
-    "time": "10th Dec 2025",
-    "details": "Beginner Workshop #2 — \"From Simulator to Real Hardware: Noise, Transpilation & Good Experiments\" • Intermediate Workshop #1 — \"Intro to Quantum Machine Learning\""
+    "date": "11th December (Thursday)",
+    "location": "Company visit",
+    "details": "Where will quantum be in the current state-of-the-art?",
+    "daySchedule": [
+      { "time": "11:00-12:30", "details": "Introduction to Machine learning and Quantum" },
+      { "time": "12:30-13:30", "details": "Lunch" },
+      { "time": "13:30-15:30", "details": "Quantum Machine learning - Variational Algorithm" },
+      { "time": "15:30-16:30", "details": "Panel discussion: Do ML and Quantum synergize?" }
+    ]
   },
   {
-    "time": "12th Dec 2025",
-    "details": "Beginner Workshop #3 — \"Algorithms Starter Pack: Deutsch–Jozsa & Grover\" • Intermediate Workshop #2 — \"Variational Circuit Design\""
-  },
-  {
-    "time": "13th Dec 2025",
-    "details": "Guest speaker from industry/academia"
-  },
-  {
-    "time": "15th Dec 2025",
-    "details": "Lab visit — Centre for Quantum Technologies @ NUS • Career talk: pathways in quantum"
-  },
-  {
-    "time": "17th Dec 2025",
-    "details": "Hackathon (Beginner & Intermediate tracks) • Awards ceremony • Closing ceremony"
+    "date": "13th December (Saturday)",
+    "location": "A-STAR",
+    "details": "Quantum in Singapore?",
+    "daySchedule": [
+      { "time": "10:00-13:00", "details": "Group Activity" },
+      { "time": "13:00-14:00", "details": "Lunch" },
+      { "time": "14:00-15:00", "details": "Panel discussion: Is quantum supremacy real?" },
+      { "time": "16:00-17:00", "details": "Ending Ceremony: Industry talk, Singapore quantum ecosystem, and Certification Ceremony" },
+      { "time": "17:00-19:00", "details": "Networking - Dinner" }
+    ]
   }
 ]
-/*
-export const QISKIT_SCHEDULE: ScheduleDate[] = [
-  {
-    date: "2025-09-12",
-    scheduleHour: [
-      {
-        time: "10:00",
-        details: "Opening Ceremony & Welcome by IBM Quantum Team"
-      },
-      {
-        time: "11:30",
-        details: "Intro to Quantum Computing with Qiskit"
-      },
-      {
-        time: "14:00",
-        details: "Hands-on Lab: Building Quantum Circuits"
-      },
-      {
-        time: "16:00",
-        details: "Panel Discussion: The Future of Quantum Tech"
-      }
-    ]
-  },
-  {
-    date: "2025-09-13",
-    scheduleHour: [
-      {
-        time: "09:30",
-        details: "Workshop: Quantum Machine Learning with Qiskit"
-      },
-      {
-        time: "12:00",
-        details: "Live Demo: Running Quantum Programs on Real Hardware"
-      },
-      {
-        time: "15:00",
-        details: "Hackathon Kickoff: Quantum Challenge Begins"
-      },
-      {
-        time: "18:00",
-        details: "Networking Session & Community Mixer"
-      }
-    ]
-  },
-  {
-    date: "2025-09-14",
-    scheduleHour: [
-      {
-        time: "10:00",
-        details: "Hackathon Final Presentations"
-      },
-      {
-        time: "13:00",
-        details: "Closing Keynote: Scaling Quantum Innovation"
-      },
-      {
-        time: "15:00",
-        details: "Award Ceremony & Farewell"
-      }
-    ]
-  }
-];
-*/
-
 
 ///// Partners /////
 
