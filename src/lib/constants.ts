@@ -1,4 +1,4 @@
-export const EVENT_TITLE = "QISKIT FALLFEST 2025";
+export const EVENT_TITLE = "QUANTUM FALLFEST 2025";
 
 // Event start date (hardcoded). To be formatted later.
 export const EVENT_START_DATE: Date = new Date("2025-12-06T09:00:00+08:00");
