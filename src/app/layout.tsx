@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Qiskit Fallfest SG 2025",
-  description: "Website for qiskit fallfest",
+  title: "Quantum Fallfest SG 2025",
+  description: "Website for quantum fallfest",
 };
 
 export default function RootLayout({
