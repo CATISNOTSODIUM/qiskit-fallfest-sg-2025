@@ -13,7 +13,7 @@ export default function TitleCard() {
           className="w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r 
                 from-foreground to-purple-400 p-10"
         >
-          <div className="text-7xl lg:text-9xl">QISKIT</div>
+          <div className="text-7xl lg:text-9xl">QUANTUM</div>
           <div className="text-6xl lg:text-8xl">{'FALL FEST'}</div>
           <div className="text-5xl lg:text-6xl font-bold">Singapore 2025</div>
           <div className="text-2xl lg:text-3xl pt-5 font-normal text-inherit">
