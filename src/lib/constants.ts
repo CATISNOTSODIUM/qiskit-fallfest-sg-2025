@@ -34,7 +34,7 @@ export const NAVIGATION_HEADERS: NavigationHeader[] = [
 ];
 
 export const ABOUT_THE_EVENT_DESCRIPTION = 
-  `Qiskit Fall Fest is the world’s largest collection of student-run quantum computing events, bringing together learners and innovators from across the world. This year, we're proud to host Singapore’s first-ever Fall Fest, open to university, polytechnic, and junior college students as well as researchers and quantum enthusiasts.
+  `Quantum Fall Fest is the world’s largest collection of student-run quantum computing events, bringing together learners and innovators from across the world. This year, we're proud to host Singapore’s first-ever Fall Fest, open to university, polytechnic, and junior college students as well as researchers and quantum enthusiasts.
 
 
 `;
