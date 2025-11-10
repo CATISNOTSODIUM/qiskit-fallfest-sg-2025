@@ -1,8 +1,8 @@
 export const EVENT_TITLE = "QUANTUM FALLFEST 2025";
 
 // Event start date (hardcoded). To be formatted later.
-export const EVENT_START_DATE: Date = new Date("2025-12-06T09:00:00+08:00");
-export const EVENT_RANGE_DATE = "6th Dec - 17th Dec";
+export const EVENT_START_DATE: Date = new Date("2025-12-08T09:00:00+08:00");
+export const EVENT_RANGE_DATE = "8th Dec - 13th Dec";
 
 interface NavigationHeader {
   title: string;
