@@ -1,7 +1,7 @@
 export const EVENT_TITLE = "QUANTUM FALLFEST 2025";
 
 // Event start date (hardcoded). To be formatted later.
-export const EVENT_START_DATE: Date = new Date("2025-12-08T09:00:00+08:00");
+export const EVENT_START_DATE: Date = new Date("2025-12-08T09:30:00+08:00");
 export const EVENT_RANGE_DATE = "8th Dec - 13th Dec";
 
 interface NavigationHeader {
@@ -139,6 +139,11 @@ export const PARTNERS: PartnerCardProps[] = [
   {
     imagePath: "/images/nus-physoc.png",
     name: "NUS Physics Society",
+    description: "National University of Singapore, Singapore"
+  },
+  {
+    imagePath: "/images/cqt.png",
+    name: "Centre for Quantum Technologies (CQT)",
     description: "National University of Singapore, Singapore"
   }
 ];

@@ -22,11 +22,11 @@ export default function TitleCard() {
           <div className="flex flex-row gap-3">
             <Button
               variant="solid"
-              className="rounded-full mt-4 bg-gray-300 text-gray-700"
+              color="secondary"
+              className="rounded-full mt-4 px-12 text-xl"
               size="lg"
-              disabled
             >
-              Registeration Not Open Yet
+              Register
             </Button>
             {/**
 <Link href={"/faq"}>
