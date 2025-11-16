@@ -3,6 +3,8 @@ export const EVENT_TITLE = "QUANTUM FALLFEST 2025";
 // Event start date (hardcoded). To be formatted later.
 export const EVENT_START_DATE: Date = new Date("2025-12-08T09:30:00+08:00");
 export const EVENT_RANGE_DATE = "8th Dec - 13th Dec";
+export const REGISTRATION_LINK = "https://forms.office.com/Pages/ResponsePage.aspx?id=Xu-lWwkxd06Fvc_rDTR-go8jV7TjsO5Di4_A-R5p7XpUQjZOMUk3RFo4RkZOWEpRSFU2RDRQWUdLRy4u";
+
 
 interface NavigationHeader {
   title: string;
@@ -171,30 +173,17 @@ export interface AnnouncementCardProps {
     date: Date
 }
 
-export const ANNOUNCEMENT_LIST: AnnouncementCardProps[] = [];
 
-/*
 export const ANNOUNCEMENT_LIST: AnnouncementCardProps[] = [
   {
-    title: "📢 Qiskit Fall Fest Singapore",
+    title: "Registration is now open!",
     description:
-      "Qiskit Fall Fest is the world’s largest collection of student-run quantum computing events, open to all university, polytechnic, and junior college students, as well as researchers and quantum enthusiasts across Singapore.",
-    date: new Date("2025-09-20"),
-  },
-  {
-    title: "🧠 Quantum Hackathon 2025: Innovate with Qubits",
-    description:
-      "Join the brightest minds in Singapore for a 48-hour quantum coding sprint. Whether you're a beginner or a seasoned researcher, this hackathon offers workshops, mentorship, and prizes for the most groundbreaking quantum solutions.",
-    date: new Date("2025-10-05"),
-  },
-  {
-    title: "🎓 Quantum Career Connect: Meet the Industry",
-    description:
-      "A networking event designed to bridge students and professionals with leading quantum tech companies. Expect panel discussions, resume reviews, and direct recruitment opportunities from startups and global firms alike.",
-    date: new Date("2025-10-18"),
-  },
+      `
+      Be Part of Singapore’s First Quantum Fall Fest! We’re excited to announce Quantum Fall Fest, a student-led celebration of 100 years of quantum mechanics, jointly organized by IBM Quantum, Quantum Computing Club @ NTU, and NUS Physics Society. This unique initiative aims to introduce and demystify quantum computing for students at the university, polytechnic, and junior college levels.
+      `,
+    date: new Date("2025-11-16"),
+  }
 ];
-*/
 ///// FAQ LIST /////
 
 

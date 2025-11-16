@@ -1,4 +1,6 @@
+import { REGISTRATION_LINK } from "@/lib/constants";
 import { Button, Image } from "@heroui/react";
+import Link from "next/link";
 
 export default function TitleCard() {
   return (
@@ -20,14 +22,17 @@ export default function TitleCard() {
             Celebrating a Century of Quantum
           </div>
           <div className="flex flex-row gap-3">
-            <Button
-              variant="solid"
-              color="secondary"
-              className="rounded-full mt-4 px-12 text-xl"
-              size="lg"
-            >
-              Register
-            </Button>
+            <a href={REGISTRATION_LINK} target="_blank">
+              <Button
+                variant="solid"
+                color="secondary"
+                className="rounded-full mt-4 px-12 text-xl"
+                size="lg"
+                
+              >
+                Register
+              </Button>
+            </a>
             {/**
 <Link href={"/faq"}>
             <Button 
