@@ -1,3 +1,4 @@
+"use client"
 import { Card, CardBody } from "@heroui/react";
 
 interface CountdownProps {
