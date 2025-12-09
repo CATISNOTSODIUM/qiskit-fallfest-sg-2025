@@ -18,7 +18,7 @@ export default function Schedule() {
       <div className="text-4xl font-bold text-left mb-4">{"Schedule (updated)"}</div>
       {
         QISKIT_SCHEDULE.map((dateSchedule, idx) => 
-          <>
+          <div key={idx}>
           <div className="text-2xl font-bold">{dateSchedule.date}</div>
           <div className="text-2xl font-bold">{dateSchedule.details}</div>
           <div className="text-base">{dateSchedule.location}</div>
@@ -36,7 +36,7 @@ export default function Schedule() {
               ))}
             </TableBody>
           </Table>
-          </>
+          </div>
         )
       }
     </div>
