@@ -15,7 +15,7 @@ export default function Schedule() {
   }
   return (
     <div className="w-full px-6" id="Schedules">
-      <div className="text-4xl font-bold text-left mb-4">{"Schedule (To be updated)"}</div>
+      <div className="text-4xl font-bold text-left mb-4">{"Schedule (updated)"}</div>
       {
         QISKIT_SCHEDULE.map((dateSchedule, idx) => 
           <>

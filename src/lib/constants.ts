@@ -61,59 +61,35 @@ interface ScheduleDetailsTime {
 // Sample schedule
 export const QISKIT_SCHEDULE: ScheduleDetailsDate[] = [
   {
-    "date": "8th December (Monday)",
-    "location": "Nanyang Technological University",
-    "details": "History",
-    "daySchedule": [
-      { "time": "9:30-10:30", "details": "Registration" },
-      { "time": "10:30-12:30", "details": "History of Quantum and Computer Science" },
-      { "time": "12:30-14:00", "details": "Lunch" },
-      { "time": "14:00-16:00", "details": "Basics Linear Algebra, Probability, and Statistics" }
-    ]
-  },
-  {
-    "date": "9th December (Tuesday)",
-    "location": "National University of Singapore",
-    "details": "Universal Computation",
-    "daySchedule": [
-      { "time": "10:00-12:30", "details": "Universal Computation and Logic Gates" },
-      { "time": "12:30-13:30", "details": "Lunch" },
-      { "time": "13:30-14:30", "details": "Guest Speaker" },
-      { "time": "14:30-17:00", "details": "Introduction to Quantum Computation" }
-    ]
-  },
-  {
     "date": "10th December (Wednesday)",
-    "location": "National University of Singapore",
-    "details": "How does Quantum work and is it real?",
+    "location": "NUS C40201-Multipurpose Hall (Report time: 09:00)",
     "daySchedule": [
-      { "time": "10:00-12:00", "details": "Different Realizations of a Computer. Different Approach to Build a Quantum Computer" },
-      { "time": "12:00-13:00", "details": "Lunch" },
-      { "time": "13:00-16:00", "details": "Evening Station (Quantum Algorithm and Lab Visit)" },
-      { "time": "16:00-17:00", "details": "IBM speaker" }
+      { "time": "09:30-11:30", "details": "Workshop: Quantum Algorithm" },
+      { "time": "11:30-12:30", "details": "Lunch (in MPH)" },
+      { "time": "12:30-13:30", "details": "Guest speaker prof Ernest Tan: Quantum Cryptography" },
+      { "time": "13:45-14:45", "details": "Guest speaker Mr Nikhil Bartake: Post Quantum Cryptography" },
+      { "time": "15:00-16:00", "details": "Lab Visit (decentralised dismissal after tour)" }
     ]
   },
   {
     "date": "11th December (Thursday)",
-    "location": "Company visit",
-    "details": "Where will quantum be in the current state-of-the-art?",
+    "location": "NUS C40201-Multipurpose Hall (Report time: 09:00)",
     "daySchedule": [
-      { "time": "11:00-12:30", "details": "Introduction to Machine learning and Quantum" },
-      { "time": "12:30-13:30", "details": "Lunch" },
-      { "time": "13:30-15:30", "details": "Quantum Machine learning - Variational Algorithm" },
-      { "time": "15:30-16:30", "details": "Panel discussion: Do ML and Quantum synergize?" }
+      { "time": "09:30-11:30", "details": "Workshop: Introduction to Machine Learning Fundamentals" },
+      { "time": "11:30-12:30", "details": "Lunch (in MPH)" },
+      { "time": "12:30-14:30", "details": "Workshop: Quantum Machine Learning -Variational Algorithm" },
+      { "time": "14:45-15:45", "details": "Panel discussion: Do ML and Quantum synergize?" },
+      { "time": "16:00-17:00", "details": "Guest Speaker IBM Talk - IBMs Roadmap to QC" }
     ]
   },
   {
     "date": "13th December (Saturday)",
-    "location": "A-STAR",
-    "details": "Quantum in Singapore?",
+    "location": "NUS C40201-Multipurpose Hall (Report time: 09:00)",
     "daySchedule": [
-      { "time": "10:00-13:00", "details": "Group Activity" },
-      { "time": "13:00-14:00", "details": "Lunch" },
-      { "time": "14:00-15:00", "details": "Panel discussion: Is quantum supremacy real?" },
-      { "time": "16:00-17:00", "details": "Ending Ceremony: Industry talk, Singapore quantum ecosystem, and Certification Ceremony" },
-      { "time": "17:00-19:00", "details": "Networking - Dinner" }
+      { "time": "09:30-11:30", "details": "Group Activity: Intro to quantum finance" },
+      { "time": "11:30-12:30", "details": "Lunch (in MPH)" },
+      { "time": "12:45-13:30", "details": "Panel discussion: Is quantum supremacy real? (Dr Dikshant from IsaaQ and Dr Angelina Frank from QAI)" },
+      { "time": "13:45-15:00", "details": "Industry Overview Talk and Closing statements" }
     ]
   }
 ]
@@ -182,6 +158,14 @@ export const ANNOUNCEMENT_LIST: AnnouncementCardProps[] = [
       Be Part of Singapore’s First Quantum Fall Fest! We’re excited to announce Quantum Fall Fest, a student-led celebration of 100 years of quantum mechanics, jointly organized by IBM Quantum, Quantum Computing Club @ NTU, and NUS Physics Society. This unique initiative aims to introduce and demystify quantum computing for students at the university, polytechnic, and junior college levels.
       `,
     date: new Date("2025-11-16"),
+  },
+  {
+    title: "Schedule is now up to date",
+    description:
+      `
+      Sorry for any inconvenience caused.
+      `,
+    date: new Date("2025-12-09"),
   }
 ];
 ///// FAQ LIST /////

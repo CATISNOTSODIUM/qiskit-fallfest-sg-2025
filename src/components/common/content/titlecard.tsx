@@ -22,7 +22,9 @@ export default function TitleCard() {
             Celebrating a Century of Quantum
           </div>
           <div className="flex flex-row gap-3">
-            <a href={REGISTRATION_LINK} target="_blank">
+            {
+              /**
+               * <a href={REGISTRATION_LINK} target="_blank">
               <Button
                 variant="solid"
                 color="secondary"
@@ -33,6 +35,8 @@ export default function TitleCard() {
                 Register
               </Button>
             </a>
+               */
+            }
             {/**
 <Link href={"/faq"}>
             <Button 
