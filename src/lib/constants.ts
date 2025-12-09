@@ -23,6 +23,9 @@ export const NAVIGATION_HEADERS: NavigationHeader[] = [
       { title: "Partners" },
       // { title: "FAQs", link: "/faq"}
     ],
+  },
+  {
+    title: "Gallery",
   }
   /*
   {
