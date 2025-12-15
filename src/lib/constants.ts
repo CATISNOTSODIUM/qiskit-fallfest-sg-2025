@@ -61,38 +61,61 @@ interface ScheduleDetailsTime {
   details: string
 }
 
-// Sample schedule
 export const QISKIT_SCHEDULE: ScheduleDetailsDate[] = [
   {
-    "date": "10th December (Wednesday)",
-    "location": "NUS C40201-Multipurpose Hall (Report time: 09:00)",
+    "date": "8th December (Monday)",
+    "details": "The Quantum Genesis",
+    "location":  "NTU SPMS-LT2 (SPMS-03-03)",
     "daySchedule": [
-      { "time": "09:30-11:30", "details": "Workshop: Quantum Algorithm" },
-      { "time": "11:30-12:30", "details": "Lunch (in MPH)" },
-      { "time": "12:30-13:30", "details": "Guest speaker prof Ernest Tan: Quantum Cryptography" },
-      { "time": "13:45-14:45", "details": "Guest speaker Mr Nikhil Bartake: Post Quantum Cryptography" },
-      { "time": "15:00-16:00", "details": "Lab Visit (decentralised dismissal after tour)" }
+      {"time":"10:00-10:30", "details": "The Quantum Kickoff"},
+      {"time":"10:30-11:30", "details": "Keynote: History of Quantum Computing"},
+      {"time":"11:30-12:30", "details": "Lunch Break"},
+      {"time":"12:30-14:30", "details": "Workshop: The Quantum Toolkit - Linear Algebra & Probability"}
+    ]
+  },
+  {
+    "date": "9th December (Tuesday)",
+    "details": "The First Quantum Leap",
+    "location":  "NUS C40201-Multipurpose Hall",
+    "daySchedule": [
+      {"time":"10:30-11:30", "details": "Talk: The Limits of Classical Computation"},
+      {"time":"11:30-12:30", "details": "Lunch Break"},
+      {"time":"12:45-14:45", "details": "Workshop: Your First Quantum Leap - Introduction to Quantum Computing"}
+    ]
+  },
+  {
+    "date": "10th December (Wednesday)",
+    "details": "Algorithms & Secrets",
+    "location": "NUS C40201-Multipurpose Hall",
+    "daySchedule": [
+      { "time": "09:30-11:30", "details": "Workshop: The Art of Quantum Speedup - Quantum Algorithms" },
+      { "time": "11:30-12:30", "details": "Lunch Break" },
+      { "time": "12:30-13:30", "details": "Talk: Quantum Cryptography" },
+      { "time": "13:45-14:45", "details": "Talk: Future-Proofing Security - Post Quantum Cryptography" },
+      { "time": "15:00-16:00", "details": "Special Event: Behind the Quantum Curtain - CQT Lab Visit" }
     ]
   },
   {
     "date": "11th December (Thursday)",
-    "location": "NUS C40201-Multipurpose Hall (Report time: 09:00)",
+    "details": "When Qubits Meet Neural Networks",
+    "location": "NUS C40201-Multipurpose Hall",
     "daySchedule": [
-      { "time": "09:30-11:30", "details": "Workshop: Introduction to Machine Learning Fundamentals" },
-      { "time": "11:30-12:30", "details": "Lunch (in MPH)" },
-      { "time": "12:30-14:30", "details": "Workshop: Quantum Machine Learning -Variational Algorithm" },
-      { "time": "14:45-15:45", "details": "Panel discussion: Do ML and Quantum synergize?" },
-      { "time": "16:00-17:00", "details": "Guest Speaker IBM Talk - IBMs Roadmap to QC" }
+      { "time": "09:30-11:30", "details": "Workshop: ML Foundation - Machine Learning Fundamentals" },
+      { "time": "11:30-12:30", "details": "Lunch Break" },
+      { "time": "12:30-14:30", "details": "Workshop: Quantum Machine Learning - Introduction to Variational Algorithm" },
+      { "time": "14:45-15:45", "details": "Talk: AI x Quantum - Challenges & Opportunities" },
+      { "time": "16:00-17:00", "details": "Talk: From Roadmap to reality: IBM’s vision and path towards Fault tolerant Quantum computing" }
     ]
   },
   {
     "date": "13th December (Saturday)",
-    "location": "NUS C40201-Multipurpose Hall (Report time: 09:00)",
+    "details": "The Quantum Horizon",
+    "location": "NUS C40201-Multipurpose Hall",
     "daySchedule": [
-      { "time": "09:30-11:30", "details": "Group Activity: Intro to quantum finance" },
-      { "time": "11:30-12:30", "details": "Lunch (in MPH)" },
-      { "time": "12:45-13:30", "details": "Panel discussion: Is quantum supremacy real? (Dr Dikshant from IsaaQ and Dr Angelina Frank from QAI)" },
-      { "time": "13:45-15:00", "details": "Industry Overview Talk and Closing statements" }
+      { "time": "09:30-11:30", "details": "Group Activity: Quantum Finance - Portfolio Optimisation with QAOA and VQE" },
+      { "time": "11:30-12:30", "details": "Lunch Break" },
+      { "time": "12:45-13:30", "details": "Panel discussion: Quantum Supremacy - Real Advantage or Hype?" },
+      { "time": "13:45-15:00", "details": "Your Quantum Future - Careers & Opportunities in Singapore + Closing Ceremony" }
     ]
   }
 ]
