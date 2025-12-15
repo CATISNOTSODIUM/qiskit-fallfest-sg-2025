@@ -65,57 +65,57 @@ export const QISKIT_SCHEDULE: ScheduleDetailsDate[] = [
   {
     "date": "8th December (Monday)",
     "details": "The Quantum Genesis",
-    "location":  "NTU SPMS-LT2 (SPMS-03-03)",
+    "location":  "NTU SPMS-LT2 SPMS-03-03 (10:00 - 14:30)",
     "daySchedule": [
-      {"time":"10:00", "details": "The Quantum Kickoff"},
+      {"time":"", "details": "The Quantum Kickoff"},
       {"time":"", "details": "Keynote: History of Quantum Computing"},
       {"time":"", "details": "Lunch Break"},
-      {"time":"14:30", "details": "Workshop: The Quantum Toolkit - Linear Algebra & Probability"}
+      {"time":"", "details": "Workshop: The Quantum Toolkit - Linear Algebra & Probability"}
     ]
   },
   {
     "date": "9th December (Tuesday)",
     "details": "The First Quantum Leap",
-    "location":  "NUS C40201-Multipurpose Hall",
+    "location":  "NUS C40201-Multipurpose Hall (10:30 - 14:45)",
     "daySchedule": [
-      {"time":"10:30", "details": "Talk: The Limits of Classical Computation"},
+      {"time":"", "details": "Talk: The Limits of Classical Computation"},
       {"time":"", "details": "Lunch Break"},
-      {"time":"14:45", "details": "Workshop: Your First Quantum Leap - Introduction to Quantum Computing"}
+      {"time":"", "details": "Workshop: Your First Quantum Leap - Introduction to Quantum Computing"}
     ]
   },
   {
     "date": "10th December (Wednesday)",
     "details": "Algorithms & Secrets",
-    "location": "NUS C40201-Multipurpose Hall",
+    "location": "NUS C40201-Multipurpose Hall (09:30 - 16:00)",
     "daySchedule": [
-      { "time": "09:30", "details": "Workshop: The Art of Quantum Speedup - Quantum Algorithms" },
+      { "time": "", "details": "Workshop: The Art of Quantum Speedup - Quantum Algorithms" },
       { "time": "", "details": "Lunch Break" },
       { "time": "", "details": "Talk: Quantum Cryptography" },
       { "time": "", "details": "Talk: Future-Proofing Security - Post Quantum Cryptography" },
-      { "time": "16:00", "details": "Special Event: Behind the Quantum Curtain - CQT Lab Visit" }
+      { "time": "", "details": "Special Event: Behind the Quantum Curtain - CQT Lab Visit" }
     ]
   },
   {
     "date": "11th December (Thursday)",
     "details": "When Qubits Meet Neural Networks",
-    "location": "NUS C40201-Multipurpose Hall",
+    "location": "NUS C40201-Multipurpose Hall (09:30 - 17:00)",
     "daySchedule": [
-      { "time": "09:30", "details": "Workshop: ML Foundation - Machine Learning Fundamentals" },
+      { "time": "", "details": "Workshop: ML Foundation - Machine Learning Fundamentals" },
       { "time": "", "details": "Lunch Break" },
       { "time": "", "details": "Workshop: Quantum Machine Learning - Introduction to Variational Algorithm" },
       { "time": "", "details": "Talk: AI x Quantum - Challenges & Opportunities" },
-      { "time": "17:00", "details": "Talk: From Roadmap to reality: IBM’s vision and path towards Fault tolerant Quantum computing" }
+      { "time": "", "details": "Talk: From Roadmap to reality: IBM’s vision and path towards Fault tolerant Quantum computing" }
     ]
   },
   {
     "date": "13th December (Saturday)",
     "details": "The Quantum Horizon",
-    "location": "NUS C40201-Multipurpose Hall",
+    "location": "NUS C40201-Multipurpose Hall (09:30 - 15:00)",
     "daySchedule": [
-      { "time": "09:30", "details": "Group Activity: Quantum Finance - Portfolio Optimisation with QAOA and VQE" },
+      { "time": "", "details": "Group Activity: Quantum Finance - Portfolio Optimisation with QAOA and VQE" },
       { "time": "", "details": "Lunch Break" },
       { "time": "", "details": "Panel discussion: Quantum Supremacy - Real Advantage or Hype?" },
-      { "time": "15:00", "details": "Your Quantum Future - Careers & Opportunities in Singapore + Closing Ceremony" }
+      { "time": "", "details": "Your Quantum Future - Careers & Opportunities in Singapore + Closing Ceremony" }
     ]
   }
 ]

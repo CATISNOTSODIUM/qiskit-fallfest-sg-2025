@@ -15,22 +15,21 @@ export default function Schedule() {
   }
   return (
     <div className="w-full px-6" id="Schedules">
-      <div className="text-4xl font-bold text-left mb-4">{"Schedule (updated)"}</div>
+      <div className="text-4xl font-bold text-left mb-4">{"Schedule"}</div>
       {
         QISKIT_SCHEDULE.map((dateSchedule, idx) => 
           <div key={idx}>
-          <div className="text-2xl font-bold">{dateSchedule.date}</div>
-          <div className="text-2xl font-bold">{dateSchedule.details}</div>
+          <div className="text-xl font-bold">{dateSchedule.date} - {dateSchedule.details}</div>
           <div className="text-base">{dateSchedule.location}</div>
-          <Table key={idx}  aria-label="qiskit-schedule" className="bg-inherit rounded-xl pt-4 pb-4">
+          <Table hideHeader isStriped key={idx}  aria-label="qiskit-schedule" className="bg-inherit rounded-xl pt-4 pb-4">
             <TableHeader>
+              {/*<TableColumn className="text-base">{"Activity"}</TableColumn>*/}
               <TableColumn className="text-base">{"Activity"}</TableColumn>
-              <TableColumn className="text-base">{"Time"}</TableColumn>
             </TableHeader>
             <TableBody>
               {dateSchedule.daySchedule.map((schedule, idx) => (
                 <TableRow key={idx}>
-                  <TableCell className="text-inherit text-base bg-inherit min-w-[200px]">{schedule.time}</TableCell>
+                  {/*<TableCell className="text-inherit text-base bg-inherit min-w-[200px]">{schedule.time}</TableCell>*/}
                   <TableCell className="text-inherit text-base bg-inherit">{schedule.details}</TableCell>
                 </TableRow>
               ))}
