@@ -25,7 +25,7 @@ function PartnerCard(props: PartnerCardProps) {
       <CardBody>
         <div className="flex flex-col md:flex-row col-span-12 gap-12">
           {/* Image Section */}
-          <div className="flex justify-center items-center md:w-1/3 bg-white shadow-lg p-4 rounded-lg">
+          <div className={`flex justify-center items-center md:w-1/3 ${props.isDark ? "bg-black" : "bg-white"} shadow-lg p-4 rounded-lg`}>
             <Image
               alt="Album cover"
               src = {imagePath}

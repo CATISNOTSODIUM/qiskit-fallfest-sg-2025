@@ -67,10 +67,10 @@ export const QISKIT_SCHEDULE: ScheduleDetailsDate[] = [
     "details": "The Quantum Genesis",
     "location":  "NTU SPMS-LT2 (SPMS-03-03)",
     "daySchedule": [
-      {"time":"10:00-10:30", "details": "The Quantum Kickoff"},
-      {"time":"10:30-11:30", "details": "Keynote: History of Quantum Computing"},
-      {"time":"11:30-12:30", "details": "Lunch Break"},
-      {"time":"12:30-14:30", "details": "Workshop: The Quantum Toolkit - Linear Algebra & Probability"}
+      {"time":"10:00", "details": "The Quantum Kickoff"},
+      {"time":"", "details": "Keynote: History of Quantum Computing"},
+      {"time":"", "details": "Lunch Break"},
+      {"time":"14:30", "details": "Workshop: The Quantum Toolkit - Linear Algebra & Probability"}
     ]
   },
   {
@@ -78,9 +78,9 @@ export const QISKIT_SCHEDULE: ScheduleDetailsDate[] = [
     "details": "The First Quantum Leap",
     "location":  "NUS C40201-Multipurpose Hall",
     "daySchedule": [
-      {"time":"10:30-11:30", "details": "Talk: The Limits of Classical Computation"},
-      {"time":"11:30-12:30", "details": "Lunch Break"},
-      {"time":"12:45-14:45", "details": "Workshop: Your First Quantum Leap - Introduction to Quantum Computing"}
+      {"time":"10:30", "details": "Talk: The Limits of Classical Computation"},
+      {"time":"", "details": "Lunch Break"},
+      {"time":"14:45", "details": "Workshop: Your First Quantum Leap - Introduction to Quantum Computing"}
     ]
   },
   {
@@ -88,11 +88,11 @@ export const QISKIT_SCHEDULE: ScheduleDetailsDate[] = [
     "details": "Algorithms & Secrets",
     "location": "NUS C40201-Multipurpose Hall",
     "daySchedule": [
-      { "time": "09:30-11:30", "details": "Workshop: The Art of Quantum Speedup - Quantum Algorithms" },
-      { "time": "11:30-12:30", "details": "Lunch Break" },
-      { "time": "12:30-13:30", "details": "Talk: Quantum Cryptography" },
-      { "time": "13:45-14:45", "details": "Talk: Future-Proofing Security - Post Quantum Cryptography" },
-      { "time": "15:00-16:00", "details": "Special Event: Behind the Quantum Curtain - CQT Lab Visit" }
+      { "time": "09:30", "details": "Workshop: The Art of Quantum Speedup - Quantum Algorithms" },
+      { "time": "", "details": "Lunch Break" },
+      { "time": "", "details": "Talk: Quantum Cryptography" },
+      { "time": "", "details": "Talk: Future-Proofing Security - Post Quantum Cryptography" },
+      { "time": "16:00", "details": "Special Event: Behind the Quantum Curtain - CQT Lab Visit" }
     ]
   },
   {
@@ -100,11 +100,11 @@ export const QISKIT_SCHEDULE: ScheduleDetailsDate[] = [
     "details": "When Qubits Meet Neural Networks",
     "location": "NUS C40201-Multipurpose Hall",
     "daySchedule": [
-      { "time": "09:30-11:30", "details": "Workshop: ML Foundation - Machine Learning Fundamentals" },
-      { "time": "11:30-12:30", "details": "Lunch Break" },
-      { "time": "12:30-14:30", "details": "Workshop: Quantum Machine Learning - Introduction to Variational Algorithm" },
-      { "time": "14:45-15:45", "details": "Talk: AI x Quantum - Challenges & Opportunities" },
-      { "time": "16:00-17:00", "details": "Talk: From Roadmap to reality: IBM’s vision and path towards Fault tolerant Quantum computing" }
+      { "time": "09:30", "details": "Workshop: ML Foundation - Machine Learning Fundamentals" },
+      { "time": "", "details": "Lunch Break" },
+      { "time": "", "details": "Workshop: Quantum Machine Learning - Introduction to Variational Algorithm" },
+      { "time": "", "details": "Talk: AI x Quantum - Challenges & Opportunities" },
+      { "time": "17:00", "details": "Talk: From Roadmap to reality: IBM’s vision and path towards Fault tolerant Quantum computing" }
     ]
   },
   {
@@ -112,10 +112,10 @@ export const QISKIT_SCHEDULE: ScheduleDetailsDate[] = [
     "details": "The Quantum Horizon",
     "location": "NUS C40201-Multipurpose Hall",
     "daySchedule": [
-      { "time": "09:30-11:30", "details": "Group Activity: Quantum Finance - Portfolio Optimisation with QAOA and VQE" },
-      { "time": "11:30-12:30", "details": "Lunch Break" },
-      { "time": "12:45-13:30", "details": "Panel discussion: Quantum Supremacy - Real Advantage or Hype?" },
-      { "time": "13:45-15:00", "details": "Your Quantum Future - Careers & Opportunities in Singapore + Closing Ceremony" }
+      { "time": "09:30", "details": "Group Activity: Quantum Finance - Portfolio Optimisation with QAOA and VQE" },
+      { "time": "", "details": "Lunch Break" },
+      { "time": "", "details": "Panel discussion: Quantum Supremacy - Real Advantage or Hype?" },
+      { "time": "15:00", "details": "Your Quantum Future - Careers & Opportunities in Singapore + Closing Ceremony" }
     ]
   }
 ]
@@ -126,6 +126,7 @@ export interface PartnerCardProps {
   imagePath: string
   name: string
   description?: string
+  isDark?: boolean
 }
 
 
@@ -149,6 +150,12 @@ export const PARTNERS: PartnerCardProps[] = [
     imagePath: "/images/cqt.png",
     name: "Centre for Quantum Technologies (CQT)",
     description: "National University of Singapore, Singapore"
+  },
+  {
+    imagePath: "/images/smu-qcs.jpg",
+    name: "SMU Quantum Computing Society",
+    description: "Singapore Management University, Singapore",
+    isDark: true
   }
 ];
 
