@@ -127,6 +127,7 @@ export interface PartnerCardProps {
   name: string
   description?: string
   isDark?: boolean
+  isProjectQuanta?: boolean
 }
 
 
@@ -139,12 +140,14 @@ export const PARTNERS: PartnerCardProps[] = [
   {
     imagePath: "/images/iqcc.jpg",
     name: "NTU Quantum Computing Club",
-    description: "Nanyang Technological University, Singapore"
+    description: "Nanyang Technological University, Singapore",
+    isProjectQuanta: true
   },
   {
     imagePath: "/images/nus-physoc.png",
     name: "NUS Physics Society",
-    description: "National University of Singapore, Singapore"
+    description: "National University of Singapore, Singapore",
+    isProjectQuanta: true
   },
   {
     imagePath: "/images/cqt.png",
@@ -155,7 +158,8 @@ export const PARTNERS: PartnerCardProps[] = [
     imagePath: "/images/smu-qcs.jpg",
     name: "SMU Quantum Computing Society",
     description: "Singapore Management University, Singapore",
-    isDark: true
+    isDark: true,
+    isProjectQuanta: true
   }
 ];
 

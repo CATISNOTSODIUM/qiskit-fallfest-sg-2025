@@ -32,7 +32,7 @@ export default function Home() {
             description={EVENT_RANGE_DATE}
           />
           <Schedule/>
-          <Gallery/>
+          {/*<Gallery/>*/}
           <Partner/>
       </main>
       <Footer/>
